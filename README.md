@@ -38,3 +38,5 @@ Run `cd ~/Documents/arduino` to **c**hange **d**irectory to the one you just cre
 Open the folder you just created in VS Code by selecting `Open Folder` from the `File` menu. If you like, you can now use the command palette to manage all of the git commands instead of the terminal. Once your folder is open, you can save the workspace to a file to quickly get all of your settings back if you close VS Code.
 
 From the VS Code explorer, open one of the .ino arduino program files. VS Code should automatically recognize the C++ formatting. You can see the language it has selected and change it from the blue bar in the bottom. Configure the Arduino extension by running `Arduino: Initialize` from the command palette. We are using a Mega 2560 clone. From the blue bar at the bottom of VS Code, select the programmer `AVRISP mkii`. If the arduino is plugged in, you can also select the serial port.
+
+There is a bug with VS Code that keeps it from finding some of the header files we want to include. Edit the `c_cpp_properties.json` file and add `<copy the directory for you local machine here>/hardware/tools/avr/**` to the list of `"includePath"` options
