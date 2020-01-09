@@ -1,0 +1,7 @@
+# many of these settings could be global, but there are a few that will muck things up
+# compiler properties are not cross platform and should be set locally
+.vscode
+.vscode/
+
+# keep vscode workspace local
+*.code-workspace
