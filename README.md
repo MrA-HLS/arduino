@@ -28,7 +28,13 @@ For class exercises, we will be using github.com. It's a good platform for shari
     Use the terminal we opened earlier in VS Code. I usually don't use passphrases with ssh keys.
 4. Test that your ssh key is working by running `ssh git@github.com` in your terminal. You should get a message that you have successfully authenticated.
 ## Setting up the project
-1. Both git and VS Code (conveniently) use a root folder to organize a project. You will need to decide where to put this folder. All of the code for the project will get copied into this folder. Likewise, anything you add to the folder will probably end up shared with everyone working on the project. A sensible location might be `u:/Documents/arduino`. 
-2. Run `git clone git@github.com:MrA-HLS/arduino.git u:/Documents/arduino` from the terminal. Use your own location if you like. This will download a copy of the project to the specified folder and start your own local git repository.
-3. Run `cd ~/Documents/arduino` to **c**hange **d**irectory to the one you just created and then `git checkout master`
+Both git and VS Code (conveniently) use a root folder to organize a project. You will need to decide where to put this folder. All of the code for the project will get copied into this folder. Likewise, anything you add to the folder will probably end up shared with everyone working on the project. A sensible location might be `u:/Documents/arduino`. 
 
+Run `git clone git@github.com:MrA-HLS/arduino.git u:/Documents/arduino` from the terminal. Use your own location if you like. This will download a copy of the project to the specified folder and start your own local git repository.
+
+Run `cd ~/Documents/arduino` to **c**hange **d**irectory to the one you just created and then `git checkout master`
+
+
+Open the folder you just created in VS Code by selecting `Open Folder` from the `File` menu. If you like, you can now use the command palette to manage all of the git commands instead of the terminal. Once your folder is open, you can save the workspace to a file to quickly get all of your settings back if you close VS Code.
+
+From the VS Code explorer, open one of the .ino arduino program files. VS Code should automatically recognize the C++ formatting. You can see the language it has selected and change it from the blue bar in the bottom. Configure the Arduino extension by running `Arduino: Initialize` from the command palette. We are using a Mega 2560 clone. From the blue bar at the bottom of VS Code, select the programmer `AVRISP mkii`. If the arduino is plugged in, you can also select the serial port.
