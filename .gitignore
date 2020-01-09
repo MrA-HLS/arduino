@@ -5,3 +5,7 @@
 
 # keep vscode workspace local
 *.code-workspace
+
+# keep build detrius local
+.build
+.build/
