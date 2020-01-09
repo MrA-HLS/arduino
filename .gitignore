@@ -7,5 +7,5 @@
 *.code-workspace
 
 # keep build detrius local
-.build
-.build/
+build
+build/
