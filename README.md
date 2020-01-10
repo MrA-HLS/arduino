@@ -1,6 +1,6 @@
 # The Amunrud VSCode / Git / Arduino setup guide
 
-1. You've already completed the first step: finding these instructions!
+You've already completed the first step: finding these instructions!
 ## Software
 Find and install all of the required software (If you're using the lab, this has already been done for you)
 - Visual Studio Code from Microsoft <https://code.visualstudio.com/>
