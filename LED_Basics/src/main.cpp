@@ -1,6 +1,6 @@
-// explicitly include the basic Arduino header - VS Code usually includes it by default for all .ino files
+// explicitly include the basic Arduino header - most arduino tools include it by default
 #include <Arduino.h>
-
+#include <RGBLed.h>
 
 // the osoyoo shield we are using to break out the pins into connectors uses labels that correspond to the pins
 // defined in the Arduino library:
@@ -30,6 +30,9 @@ const int ledPinY = A3;
 const int ledPinR = 12; 
 const int ledPinW = 11;
 
+// Set up the RGB LED to use digital pins 22-24
+RGBLed rgb = RGBLed(ANODE,22,23,24);
+
 
 // Generally, you should use "unsigned long" for variables that hold time
 // The value will quickly become too large for an int to store
@@ -46,6 +49,9 @@ void setup() {
   pinMode(ledPinG, OUTPUT);
   pinMode(ledPinR, OUTPUT);
   pinMode(ledPinW,OUTPUT);
+
+  // init for RGB
+  rgb.setup();
 }
 
 // Main Program *********************************************************************
@@ -80,4 +86,7 @@ void loop() {
 
   // set the red light to pulse at 3x the rate of the white
   analogWrite(ledPinR,(level*3%255));
+
+  // set the RGB led to color change based on interval harmonics
+  rgb.on(Color(level,level*2%255,level*3%255));
 }
