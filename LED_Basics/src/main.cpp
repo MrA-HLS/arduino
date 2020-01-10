@@ -1,5 +1,7 @@
 // explicitly include the basic Arduino header - most arduino tools include it by default
 #include <Arduino.h>
+
+// you can use libraries by adding them to the platformio.ini lib_deps section
 #include <RGBLed.h>
 
 // the osoyoo shield we are using to break out the pins into connectors uses labels that correspond to the pins

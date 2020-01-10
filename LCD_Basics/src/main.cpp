@@ -1,8 +1,3 @@
-
-
-
-
-// explicitly include the basic Arduino header - VS Code usually includes it by default for all .ino files
 #include <Arduino.h>
 #include <Wire.h> // Library for I2C communication
 #include <LiquidCrystal_I2C.h> // Library for LCD
@@ -37,10 +32,10 @@ unsigned long previousMillis = 0;
 const long interval = 7000; 
 
 void setup() {
-  // Initiate the LCD:
+  // Initialize the LCD:
   lcd.init();
   lcd.backlight();
-  lcd.setCursor(1,1);
+  lcd.setCursor(1,0);
 
   //set led pinMode
   pinMode(ledPinW,OUTPUT);
@@ -59,9 +54,12 @@ void loop() {
 
   lcd.clear();
   // lcd.autoscroll();
-  lcd.setCursor(1,1);
+  lcd.setCursor(1,0);
   lcd.print("White level is:");
-  lcd.setCursor(2,1);
+  lcd.setCursor(1,1);
   lcd.print(level);
+
+  // wait around so we can see things?
+  delay(50);
   
 }
