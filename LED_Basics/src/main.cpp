@@ -91,4 +91,8 @@ void loop() {
 
   // set the RGB led to color change based on interval harmonics
   rgb.on(Color(level,level*2%255,level*3%255));
+
+
+  // try out some blinking for homework:
+  // rgb.blink(Color(255,0,255),6000)
 }
