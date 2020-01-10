@@ -50,5 +50,5 @@ There can be a lot of files in a project. Most of these need not concern you muc
 
 ### Building and Running Projects
 Open the main.cpp file. It should look familiar. Read through the entire file until you are comfortable with what it does.
-When you are ready, you can build the project by selecting the blue check mark in the blue bar at the bottom of VS Code. Once you've successfully built the project, write it to the arduino by connecting the USB to your station/computer and selecting the 'Upload' arrow next to the check mark.
+When you are ready, you can build the project by selecting the check mark in the blue bar at the bottom of VS Code. Once you've successfully built the project, write it to the arduino by connecting the USB to your station/computer and selecting the 'Upload' arrow next to the check mark.
 
