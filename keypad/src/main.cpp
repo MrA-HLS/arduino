@@ -18,8 +18,8 @@ void keypadEvent(KeypadEvent key);
 // set up lcd with default address
 LiquidCrystal_PCF8574 lcd(0x27);
 
-const byte ROWS = 4; //four rows
-const byte COLS = 4; //four columns
+const uint8_t ROWS = 4; //four rows
+const uint8_t COLS = 4; //four columns
 char keys[ROWS][COLS] = {
     {'1','2','3','A'},
     {'4','5','6','B'},
@@ -27,18 +27,18 @@ char keys[ROWS][COLS] = {
     {'*','0','#','D'}
 };
 
-byte rowPins[ROWS] = {33, 35, 37, 39}; //connect to the row pinouts of the keypad
-byte colPins[COLS] = {41, 43, 45, 47}; //connect to the column pinouts of the keypad
+uint8_t rowPins[ROWS] = {33, 35, 37, 39}; //connect to the row pinouts of the keypad
+uint8_t colPins[COLS] = {41, 43, 45, 47}; //connect to the column pinouts of the keypad
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
-byte ledPin = 13; 
+uint8_t ledPin = 13; 
 
 boolean blink = false;
 boolean ledPin_state;
 
 // set lcd origin
-byte col = 0;
-byte row = 0;
+uint8_t col = 0;
+uint8_t row = 0;
 
 void setup(){
   Serial.begin(9600);                   // Allow output to serial connection
