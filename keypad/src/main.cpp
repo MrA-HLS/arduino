@@ -1,4 +1,5 @@
-/* @file EventSerialKeypad.pde
+/* based on 
+@file EventSerialKeypad.pde
  || @version 1.0
  || @author Alexander Brevig
  || @contact alexanderbrevig@gmail.com
@@ -6,6 +7,7 @@
  || @description
  || | Demonstrates using the KeypadEvent.
  || #
+ LCD display added
  */
 #include <Arduino.h>
 #include <Keypad.h>
